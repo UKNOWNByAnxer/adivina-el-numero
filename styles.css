@@ -1,0 +1,119 @@
+/* Establecer el fondo con un gradiente radial */
+body {
+    background: radial-gradient(#ff00ff, #addee0);
+    background-size: cover; /* Ajustar el tamaño del fondo al tamaño de la ventana */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 0; /* Eliminar el padding para ocupar todo el espacio */
+    margin: 0; /* Eliminar el margen para ocupar todo el espacio */
+    overflow-x: hidden; /* Evitar la barra de desplazamiento horizontal */
+}
+
+#attempts{
+    position: fixed; /* Fijar la posición del logotipo */
+    top: 190px; /* Colocar el logotipo en la parte superior */
+    right: 0; /* Colocar el logotipo en la parte derecha */
+    margin: 20px; /* Agregar un margen para separar el logotipo del borde */
+    width: 200px;
+    height: 200px;
+}
+
+#result-message{
+    background-color: #00000046;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+/* Estilo para el logotipo */
+.logo {
+    position: fixed; /* Fijar la posición del logotipo */
+    top: 0; /* Colocar el logotipo en la parte superior */
+    right: 0; /* Colocar el logotipo en la parte derecha */
+    margin: 20px; /* Agregar un margen para separar el logotipo del borde */
+    width: 200px;
+    height: 200px;
+}
+
+.nombre {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin: 20px;
+}
+.nombre1 {
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin: 20px;
+}
+.nombre2 {
+    position: fixed;
+    bottom: 60px;
+    left: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin: 20px;
+}
+.nombre3 {
+    position: fixed;
+    bottom: 90px;
+    left: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.renesherift {
+    margin: 100px 0 0 0;
+    width: 200px;
+    height: 200px;
+}
+
+/* Estilo para los campos de entrada */
+input {
+    text-align: center; /* Centrar el texto dentro del campo */
+    width: 50%;
+    padding: 8px;
+    margin: 5px auto; /* Centrar los campos horizontalmente */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo para los mensajes de texto */
+p {
+    font-weight: bold;
+}
+
+/* Estilo para el formulario */
+form {
+    border-color: transparent;
+}
+
+/* Estilo específico para los campos de entrada numérica */
+input[type="number"] {
+    width: 20%; /* Establecer el ancho del campo */
+}
+
+/* Estilo para el botón */
+button {
+    display: block;
+    margin: auto;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Animación de transición */
+}
+
+/* Estilo hover para el botón */
+button:hover {
+    background: linear-gradient(45deg, #ff00d4, #007bff); /* Agregar gradiente de color */
+    color: #fff; /* Cambiar el color del texto */
+}

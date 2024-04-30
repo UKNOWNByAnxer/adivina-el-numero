@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número</title>
+</head>
+<body>
+    <img src="assets/Negro.png" alt="LogoPersonal" class="logo">
+    <img class="renesherift" src="assets/9041-pepe-shooting.gif" alt="KJJ">
+    <div id="group">
+        <p class="nombre">Martínez González Alexander</p>
+        <p class="nombre1">Estrella Velasco Joseph Oziel</p>
+        <p class="nombre2">Betzabe Areli Rodríguez Osorno</p>
+        <p class="nombre3">Alan Barron Alcaraz</p>
+    </div>
+    <div id="game-container">
+        <h1>¡Adivina el número!</h1>
+        <p>Adivina el número En un rango del 1-1000</p>
+        <div id="attempts"></div>
+        <form id="guess-form">
+            <input type="number" id="number-input" max="1000" placeholder="Ingresa Un Número" required>
+            <button type="submit">Adivinar</button>
+        </form>
+        <p id="result-message"></p>
+        <p id="attempts-message"></p>
+        <button id="restart-button">Reiniciar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
