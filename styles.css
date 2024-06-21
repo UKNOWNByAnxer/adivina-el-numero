@@ -9,13 +9,18 @@ body {
     overflow-x: hidden; /* Evitar la barra de desplazamiento horizontal */
 }
 
-#attempts{
-    position: fixed; /* Fijar la posición del logotipo */
-    top: 190px; /* Colocar el logotipo en la parte superior */
-    right: 0; /* Colocar el logotipo en la parte derecha */
-    margin: 20px; /* Agregar un margen para separar el logotipo del borde */
+#attempts {
+    position: fixed; /* Fijar la posición del contenedor */
+    top: 0px; /* Colocar el contenedor en la parte superior */
+    right: 0; /* Colocar el contenedor en la parte derecha */
+    margin: 20px; /* Agregar un margen para separar el contenedor del borde */
     width: 200px;
-    height: 200px;
+    height: 90%;
+    overflow-y: auto; /* Agregar desplazamiento vertical */
+    background-image: linear-gradient(163deg, #ff00ff 0%, #3700ff 100%); /* Agregar un fondo para mejor visibilidad */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Padding interno */
+    transition: all 0.25s cubic-bezier(0, 0, 0, 1);
 }
 
 #result-message{
@@ -27,7 +32,7 @@ body {
 .logo {
     position: fixed; /* Fijar la posición del logotipo */
     top: 0; /* Colocar el logotipo en la parte superior */
-    right: 0; /* Colocar el logotipo en la parte derecha */
+    left: 0; /* Colocar el logotipo en la parte derecha */
     margin: 20px; /* Agregar un margen para separar el logotipo del borde */
     width: 200px;
     height: 200px;
@@ -114,6 +119,53 @@ button {
 
 /* Estilo hover para el botón */
 button:hover {
+    transform: scale(0.95);
     background: linear-gradient(45deg, #ff00d4, #007bff); /* Agregar gradiente de color */
     color: #fff; /* Cambiar el color del texto */
+}
+
+
+/* Estilos para la guía */
+.package {
+    position: fixed;
+    width: 200px;
+    height: 254px;
+    background-image: linear-gradient(163deg, #ff00ff 0%, #3700ff 100%);
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.25s cubic-bezier(0, 0, 0, 1);
+}
+
+.package:hover {
+    box-shadow: 0px 0px 30px 1px rgba(204, 0, 255, 0.3);
+}
+
+.package2 {
+    width: 169px;
+    height: 224px;
+    background-color: #1d1724;
+    border-radius: 10px;
+    transition: all 0.25s cubic-bezier(0, 0, 0, 1);
+    padding: 15px;
+    cursor: pointer;
+}
+
+.package2:hover {
+    transform: scale(0.98);
+    border-radius: 18px;
+}
+
+.text {
+    color: white;
+    font-size: 17px;
+}
+
+.text2 {
+    color: rgb(0, 255, 242);
+    font-size: 17px;
+}
+
+.text3 {
+    color: rgb(216, 34, 34);
+    font-size: 17px;
 }
