@@ -45,7 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
             if (guessedNumber === randomNumber) {
                 if (!adivino) {
                     adivino = true;
-                    resultMessage.textContent = '¡Has adivinado el número!';
+                    resultMessage.textContent = `¡Has adivinado el número! ${randomNumber}`;
+                    resultMessage.style.color = '#0f0';
                     attemptsMessage.textContent = 'Lo adivinaste en ' + counter + ' intentos';
                     attempts.innerHTML += '<p>' + counter + '° Ingresaste' + '. ' + guessedNumber + '</p>';
                 }
@@ -89,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 resultMessage.style.color = 'blue';
                 attempts.innerHTML += '<p>' + counter + '° Ingresaste' + '. ' + guessedNumber + '</p>';
                 counter++; // Incrementar el contador de intentos
+                form.reset(); 
             }
         }
     });
@@ -102,7 +104,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Si no se adivinó, mostrar alerta con el número correcto
         if (!adivino) {
-            alert('El Número era ' + randomNumber);
+            resultMessage.textContent = `🥺El Número era ${randomNumber}`;
+            resultMessage.style.color = '#c70';
+            // Eliminar el mensaje después de 3 segundos
+            setTimeout(() => {
+                resultMessage.textContent = '';
+            }, 2000);
         }
 
         // Reiniciar variables y generar un nuevo número aleatorio
